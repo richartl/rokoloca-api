@@ -39,3 +39,4 @@ backup/
 *.pyc
 .DS_Store
 .swp
+.env
