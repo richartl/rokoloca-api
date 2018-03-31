@@ -1,0 +1,23 @@
+{
+    "staging": {
+        "url": "54.201.9.68",
+        "user": "ubuntu",
+        "group": "ubuntu",
+        "hosts": [
+            "ubuntu@54.201.9.68"
+        ],
+        "public_dir": "/home/ubuntu/vhosts/rokoloca/",
+        "cpchuy_dir": "/home/ubuntu/vhosts/rokoloca/",
+        "command_prefixes": [],
+        "dbname": "rokolaloca",
+        "dbuser": "rokolaloca",
+        "dbpassword": "password",
+        "dbhost": "localhost",
+        "exclude": [
+            ".env",
+            ".git",
+            "conf/",
+            "src/tmp/*"
+        ]
+    }
+}
