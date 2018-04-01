@@ -1,0 +1,59 @@
+source 'https://rubygems.org'
+
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'activeadmin', github: 'activeadmin'
+gem 'bcrypt', '~> 3.1.7'
+gem 'coffee-rails'
+gem 'devise', '> 4.x'
+gem 'execjs'
+gem 'google-api-client', '~> 0.7.1', require: 'google/api_client'
+gem 'google_custom_search_api'
+gem 'httparty', '~> 0.13.7'
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'jquery-rails'
+gem 'json'
+gem 'json-schema'
+gem 'jwt'
+gem 'monkey_string'
+gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler'
+gem 'pg'
+gem 'puma', '~> 3.9', '>= 3.9.1'
+gem 'rack-cors'
+gem 'rails', '~> 5.0.2'
+gem 'rails-i18n', '~> 5.0.0'
+gem 'rails_param'
+gem 'retriable', '~> 1.4'
+gem 'rubyzip'
+gem 'sass-rails', '~> 5.0'
+gem 'simple_command'
+gem 'swagger-blocks'
+gem 'therubyracer'
+gem 'uglifier', '>= 2.7.2'
+gem 'yard'
+gem 'youtube-dl.rb'
+
+group :development, :test, :production do
+  gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
+  gem 'haml-lint', require: false
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rubocop', '~> 0.48.1', require: false
+  gem 'webmock'
+end
+
+group :development do
+  gem 'listen', '~> 3.0.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'json_matchers'
+  gem 'shoulda-matchers', git:
+    'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+end
+
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

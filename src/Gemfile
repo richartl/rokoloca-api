@@ -5,17 +5,25 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'action-cable-testing'
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jbuilder', '~> 2.5'
+gem 'json'
+gem 'json-schema'
+gem 'jwt'
 gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'rack-cors'
 gem 'rails', '~> 5.1.6'
 gem 'redis', '~> 4.0'
+gem 'shoulda-matchers', '~> 3.1'
+gem 'swagger-blocks'
 
 group :docker, :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot'
 end
 
 group :development do
