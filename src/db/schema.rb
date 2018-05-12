@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180331202301) do
   enable_extension "uuid-ossp"
 
   create_table "playlists", force: :cascade do |t|
-    t.uuid "uuid", default: "5f9e09f7-ea96-4b3f-849e-784d48e06549", null: false
+    t.uuid "uuid", default: "a05b9d29-8d84-4f99-b7ad-d180c8b7be96", null: false
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

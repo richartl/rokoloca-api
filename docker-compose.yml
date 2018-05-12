@@ -5,7 +5,7 @@ services:
         hostname: "${PROJECT_NAME}_rails"
         container_name: "${PROJECT_NAME}_rails"
         ports:
-            - 3000:3000
+            - "${RAILS_PORT}:3000"
             - 8808:8808
         volumes:
             - "./${PROJECT_ROOT}:/usr/src/app"
